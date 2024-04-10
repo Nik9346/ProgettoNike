@@ -1,0 +1,630 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    max-width: 1280px;
+    padding: 0;
+    margin: auto;
+    /* overflow: auto; */
+}
+img{max-width: 100%;}
+
+div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.text-white{
+    color: white;
+}
+.hidden{
+    height: 0;
+    /* display: none; */
+}
+button:hover{
+    background-color: #555;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.color-white{
+    color: #fff;
+}
+.bold{
+    font-weight: 400;
+}
+.visible{
+    height: 350px;
+}
+.scroll-auto{
+    scroll-behavior: auto;
+}
+.scroll-smooth{
+    scroll-behavior: smooth;
+}
+
+/* Gestisco la barra sopra alla barra dei menù */
+#tit-bar{
+    padding: 0 2em;
+    margin-top: .3em;
+    max-width: 100%;
+    overflow: auto;
+    background-color: #F5F5F5
+}
+#tit-bar-box-sx{
+    overflow: auto;
+    width: calc(100%-70%);
+    float: left;
+}
+#tit-bar-box-sx ul li{
+    float: left;
+    padding: 0 1em;
+}
+
+#tit-bar-box-dx{
+    width: 50%;
+    float: right;    
+}
+
+#tit-bar-box-dx ul{
+    margin-top: .3em;
+    overflow: auto;
+    width: 100%;
+    text-align: end;
+}
+#tit-bar-box-dx ul li{
+    text-align: center;
+    display:inline-block;
+}
+    
+#tit-bar-box-dx ul li a{
+    display: block;
+    margin: .2em 0;
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid black;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    font-size: .8em;
+}
+#tit-bar-box-dx ul li:last-child a{
+    border-right: none;
+}
+#tit-bar-box-dx ul li:hover a{
+    color: #555;
+}
+
+/* Gestisco la navbar principale */
+
+#nav-bar{
+    padding: 0 2em;
+    padding-top: .6em;
+    clear: both;
+    width: 100%;
+    height: 60px;
+}
+#logo-air-box{
+    float: left;
+    width: 25%;
+    padding: 0 1em;
+}
+
+#image-logo-nike{
+    display: block;
+    width: 3.68em;
+    height: 3.68em;
+}
+#bar-menu{
+    overflow: hidden;
+    width: 50%;
+    height: 60px;
+    float: left;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#bar-menu ul{
+    width: 100%;
+}
+#bar-menu ul li{
+    height: 60px;
+    float: left;
+}
+#bar-menu ul li a{
+    text-align: center;
+    margin: 0.6em 1em;
+    display: block;
+    padding: 0.6em 0;
+    font-size: .8em;
+    text-decoration: none;
+    color: black;
+}
+#bar-menu ul li:hover a{
+    border-bottom: 1px solid black;
+}
+
+#bar-menu ul li ul li{
+    width: calc(100% / 4);
+    float:left;
+}
+#box-destro-nav{
+    margin: .6em 0;
+    width: 25%;
+    float: right;
+}
+
+#box-destro-btn-box{
+    width: 65%;
+    float: left;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+}
+#box-destro-btn-box button{
+    padding-top: .5em;
+    border: none;
+    float: left;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#box-destro-btn-box input{
+    float: left;
+    width: 70%;
+    height: 2.7em;
+    border: none;
+    text-indent: 0;
+    background-color: #F5F5F5;
+}
+#box-destro-icon-box{
+    padding-top: .1em;
+    float: left;
+    width: calc(35% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#carrello-icon{
+    cursor: pointer;
+}
+#carrello{
+    float: right;
+    padding-left: .3em;
+    padding-top: .3em;
+    width: 50%;
+    border-radius: 50%;
+}
+#carrello:hover{
+    background-color: #F5F5F5;
+}
+#favorite-icon{
+    float: left;
+    cursor: pointer;
+    width: 50%;
+    padding-left: .3em;
+    padding-top: .3em;
+    border-radius: 50%;
+}
+#favorite-icon:hover{
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #F5F5F5;
+}
+
+/* Gestisco il banner sotto la navbar */
+#banner{
+    width: 100%;
+    height: 60px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+#banner div{
+    padding-top: .7em;
+    margin-top: .7em;
+    width: 100%;
+}
+
+#banner span{
+    width: 100%;
+    font-weight: bold;
+    padding-top: .5em;
+}
+.bold-small{
+    font-size: .7em;
+}
+
+/* Gestisco il banner principale */
+#banner-principale{
+    margin-top: 1.5em;
+    position: relative;
+}
+#banner-principale div:last-child{
+    position: absolute;
+    top: 16.875em;
+    padding-left: 1em;
+}
+#banner-principale div:last-child h2{
+    font-weight: bolder;
+    color: white;
+    font-family: sans-serif;
+    margin-bottom: .3em;
+}
+#banner-principale div:last-child p{
+    color: white;
+    font-size: .9em;
+}
+#banner-principale div:last-child button{
+    border-radius: 20px;
+    height: 2.7em;
+    border-style: solid;
+    border: none;
+    padding: 0 1em;
+    cursor: pointer;
+    margin-top: .5em;
+}
+/* Gestisco la prima scroll bar */
+#scroll-bar1{
+    width: 100%;
+    padding: 0 3em;
+    height: 3.75em;
+    margin-top: 2em;
+}
+#scroll-bar1>div{
+    width: 90%;
+    float: left;
+    height: 3em;
+    margin: .3em 0;
+}
+#scroll-bar1>div h2{
+    margin: .3em 0;
+    font-size: 1.5em;
+}
+#scroll-bar1 div:last-child{
+    text-align: end;
+    width: 10%;
+    height: 3em;
+}
+#scroll-bar1 div:last-child button{
+    height: 1.9em;
+    font-size: 1.5rem;
+    width: 1.9em;
+    border-radius: 50%;
+    border: none;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+/* Gestisco la sezione immagini prima */
+#first-img-section{
+    width: calc(100%);
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+first-img-section::-webkit-scrollbar{
+    display: none;
+}
+#first-img-section ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+#first-img-section ul li{
+    display: inline-block;
+    width: calc(100% / 3);
+    cursor: pointer;
+ }
+ #first-img-section ul li div h2{
+    font-size: 1em;
+    margin-bottom: .3em;
+ }
+ #first-img-section ul li div p{
+    font-size: .9em;
+    margin-top: .3em;
+    margin-bottom: 1em;
+ }
+ #first-img-section ul li div p:last-child{
+    margin-top: .5em;
+    font-size: 1em;
+ }
+.bold{
+    font-weight: bold;
+}
+
+/* Gestisco la seconda scroll-bar */
+
+#scroll-bar2{
+    width: 100%;
+    padding: 0 3em;
+    height: 3.75em;
+    margin-top: 2em;
+}
+#scroll-bar2 div{
+    width: 90%;
+    float: left;
+    height: 3em;
+    margin: .3em 0;
+}
+#scroll-bar2 div h2{
+    margin: .3em 0;
+    font-size: 1.5em;
+}
+#scroll-bar2 div:last-child{
+    text-align: end;
+    width: 10%;
+    height: 3em;
+}
+#scroll-bar2 div:last-child button{
+    height: 1.9em;
+    font-size: 1.5rem;
+    width: 1.9em;
+    border-radius: 50%;
+    border: none;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+/* Gestisco la sezione con gli sport */
+#second-img-section{
+    width: calc(100%);
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+#second-img-section ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+#second-img-section ul li{
+    display: inline-block;
+    width: calc(100% / 3);
+    cursor: pointer;
+ }
+ #second-img-section ul li div h2{
+    font-size: 1em;
+    margin-bottom: .3em;
+ }
+/* Gestisco la terza scrollBar */
+#scroll-bar3{
+    width: 100%;
+    padding: 0 3em;
+    height: 3.75em;
+    margin-top: 2em;
+}
+#scroll-bar3 div{
+    width: 90%;
+    float: left;
+    height: 3em;
+    margin: .3em 0;
+}
+#scroll-bar3 div h2{
+    margin: .3em 0;
+    font-size: 1.5em;
+}
+#scroll-bar3 div:last-child{
+    text-align: end;
+    width: 10%;
+    height: 3em;
+}
+#scroll-bar3 div:last-child button{
+    height: 1.9em;
+    font-size: 1.5rem;
+    width: 1.9em;
+    border-radius: 50%;
+    border: none;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+/* Gestisco la Sezione Membership */
+#third-img-section{
+    width: calc(100%);
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-right: 3em;
+    padding-left: 3em;
+}
+#third-img-section ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+}
+#third-img-section ul li{
+    display: inline-block;
+    width: calc(100% / 3);
+    cursor: pointer;
+ }
+ #third-img-section ul li div img{
+    cursor: pointer;
+ }
+ #third-img-section ul li div h3{
+    font-size: 1.5em;
+    margin-top: .3em;
+    word-wrap: break-word;
+    white-space: normal;
+    font-weight: 200;
+ }
+ #third-img-section ul li div{
+    position: relative;
+ }
+
+ #third-img-section ul li div div{
+    position: absolute;
+    top: 200px;
+    width: 80%;
+    margin-left: 2em;
+    cursor: pointer;
+ }
+ #third-img-section ul li div div button{
+    border-radius: 20px;
+    height: 2.7em;
+    border-style: solid;
+    border: none;
+    padding: 0 1em;
+    cursor: pointer;
+    margin-top: 2em;
+}
+#third-img-section ul li:first-child div div button{
+    margin-top: 0;
+}
+#third-img-section ul li:last-child div div button{
+    margin-top: 1.4em;
+}
+#third-img-section ul li div div p{
+    margin: 0;
+}
+/* Gestisco il pre-footer */
+#pre-footer{
+    width: 80%;
+    overflow: auto;
+    margin: 6em auto;
+}
+#pre-footer>div{
+    width: calc(100% / 4);
+    float: left;
+}
+#pre-footer div ul li{
+    padding: .5em 0;
+    color: #888;
+    cursor: pointer;
+}
+#pre-footer div ul{
+    overflow: hidden;
+}
+#pre-footer div div div{
+    transition: .5s ease-in-out;
+}
+#pre-footer div h4{
+    font-weight: 100;
+}
+#pre-footer div ul li:hover{
+    color: #222;
+}
+
+/* Gestisco lo stile del footer box sx*/
+footer>div{
+    width: 100%;
+    background-color: black;
+}
+#foot-box-sx{
+    width: 80%;
+    padding: 2.5em 0 0 2.5em;
+    overflow: auto;
+    float: left;
+    background-color: black;
+}
+#foot-box-sx>div{
+    float: left;
+    width: calc(100% / 4);
+}
+#foot-box-sx div ul li{
+    padding: .5em 0;
+    color: #555;
+    display: block;
+}
+#foot-box-sx div ul li a{
+    font-family: Helvetica, sans-serif;
+    font-size: .7em;
+    font-weight: 600;
+    display: inline;
+}
+#foot-box-sx>div>ul>div li a{
+    color: #7e7e7e;
+    font-size: .75em;
+    letter-spacing: .5px;
+}
+#foot-box-sx>div>ul>div li a:hover{
+    color: #fff;
+}
+/* Gestisco stile footer box dx */
+#foot-box-dx{
+    width: 20%;
+    float: left;
+    overflow: auto;
+    background-color: black;
+    height: 250px;
+    padding: 2.5em 2.5em 0 0 ;
+}
+#foot-box-dx ul{
+    text-align: end;
+}
+#foot-box-dx ul li{
+    display: inline;
+    padding: 0 .5em;
+}
+#foot-box-dx ul li a svg{
+    fill: grey;
+}
+#foot-box-dx ul li a svg:hover{
+    fill: #e7e7e7;
+}
+
+#foot-box-bottom{
+    clear: both;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    border: 1px solid black;
+    text-align: end;
+    background-color: black;
+}
+#foot-box-bottom ul li{
+    display: inline;
+    padding: 0 .5em;
+}
+#foot-box-bottom ul li a{
+    color: #7e7e7e;
+    font-size: .75em;
+    font-weight: 600;
+}
+#foot-box-bottom ul li:hover a{
+    color: #F5F5F5;
+}
+
+/* Gestisco il footer basso di sinistra */
+#foot-box-bottom2{
+    width: 100%;
+    overflow: auto;
+    background-color: black;
+}
+#foot-box-bottom-sx a{
+    color: white;
+}
+#foot-box-bottom-sx{
+    width: 50%;
+    float: left;
+    padding-left: 2.5em;
+    font-size: .75em;
+
+}
+#foot-box-bottom-sx a{
+    float: left;
+    padding: 1em 2em 1em 0;
+}
+#foot-box-bottom-sx div{
+    padding: 1.3em 2em 1em 0;
+    color: #7e7e7e;
+}
+/* Gestisco il footer basso di destra */
+#foot-box-bottom-dx{
+    width: 50%;
+    text-align: end;
+    padding: .5em .5em;
+    float: left;
+
+}
+#foot-box-bottom-dx ul li{
+    display: inline;
+    padding: 1em 0 1em 2em;
+}
+#foot-box-bottom-dx ul li a{
+    color: #7e7e7e;
+    font-size: .75em;
+    font-weight: 600;
+}
+
+#foot-box-bottom-dx ul li:hover a{
+    color: #F5F5F5;
+}
+

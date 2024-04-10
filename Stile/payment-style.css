@@ -1,0 +1,533 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    max-width: 1280px;
+    padding: 0;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+input{max-width: 100%;}
+
+div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.text-white{
+    color: white;
+}
+.hidden{
+    display: none;
+}
+.visibility-hidden{
+    visibility: hidden;
+}
+button:hover{
+    background-color: #555;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.color-white{
+    color: #fff;
+}
+.bold{
+    font-weight: 300;
+}
+.filter-brightness{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.bck-color-grey{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.visible{
+    display: block;
+}
+h2{
+    font-weight: 500;
+}
+h3{
+    margin: .5em 0;
+}
+.span-required{
+    clear: both;
+    display: block;
+    margin-bottom: .5em ;
+    margin-top: .3em;
+    font-size: .8em;
+    padding-left: 1em;
+    color: #D30005;
+    font-weight: 500;
+}
+.btn-disabled{
+    background-color: rgb(229, 229, 229);
+    color: rgb(158, 158, 160);
+}
+.btn-active{
+    background-Color: #111111;
+    color:  #fff;
+}
+
+/* Gestisco la navbar */
+#logo-air-box{
+    float: left;
+    width: 50%;
+    padding: 0 1em;
+}
+
+#image-logo-nike{
+    display: block;
+    width: 3.68em;
+    height: 3.68em;
+}
+#nav-bar div:nth-child(2){
+    text-align: end;
+    overflow: auto;
+    padding-right: 2em;
+    width: 50%;
+}
+#carrello-icon{
+    cursor: pointer;
+}
+#carrello{
+    float: right;
+    padding-left: .3em;
+    padding-right: .3em;
+    margin-top: .8em;
+    padding-top: .3em;
+    width: 5%;
+    border-radius: 50%;
+}
+#carrello:hover{
+    background-color: #F5F5F5;
+}
+
+main>div:first-child{
+    width: 80%;
+    text-align: center;
+    margin: 4em auto;
+    
+}
+main div:first-child h2{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/* Gestisco lo stile del form */
+#form{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* Gestisco lo stile del form-sx */
+#form-box-sx {
+    margin-right: 1em;
+    width: calc(70% - 1em);
+    float: left;
+}
+#form-box-sx div{
+    overflow: auto;
+}
+#form-box-sx div:nth-child(3) div{
+    width: 50%;
+    float: left;
+}
+#first-section button{
+    width: calc(50% - 1em);
+    float: left;
+    margin: 1em .5em;
+    padding: 1em 0;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #75757563;
+    cursor: pointer;
+}
+
+#form-box-sx div button span{
+    margin-top: 0;
+    vertical-align: super;
+    font-size: 1.2em;
+    padding-top: 0;
+    margin-left: 1em;
+}
+#form-box-sx div input{
+    width:calc(100% - 1em);
+    margin: 1em .5em 0 .5em;
+    padding: 1em 0;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 1em;
+    padding-left: .5em;
+}
+#form-box-sx div:nth-child(6) div{
+    width: calc(100% / 3);
+    float: left;
+}
+#form-box-sx div:nth-child(7) div{
+    width: calc(100% / 2);
+    float: left;
+}
+#form-box-sx div:nth-child(8){
+    text-align: end;
+    border-bottom: 1px solid #75757563;
+}
+#form-box-sx div:nth-child(8) button{
+    cursor: pointer;
+    margin: 1em 0;
+    padding: .7em;
+    font-size: 1em;
+    border-radius: 30px;
+    background-color: rgb(229, 229, 229);
+    color: rgb(158, 158, 160);
+    font-weight: 600;
+    border-color: transparent;
+}
+#form-box-sx div:nth-child(8) button:hover{
+    background-color: #707072;
+    color: #fff;
+}
+#form-box-sx div:nth-child(9){
+    border-bottom: 1px solid #75757563;
+    padding: 1.5em 0;
+    color: #757575;
+}
+#form-box-sx div:nth-child(10){
+    border-bottom: 1px solid #75757563;
+    padding: 1.5em 0;
+    color: #757575;
+}
+#address-box{
+    width: 100%;
+    clear: both;
+}
+#address-box button{
+    width: 100%;
+    float: left;
+    margin: .4em 0;
+    background-color: #fff;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: left;
+}
+
+/* Gestisco lo stile del box di destra */
+#form-box-dx{
+    margin-left: 1em;
+    width: calc(100% - 70% - 1em);
+    float: left;
+}
+#form-box-dx div h2{
+    width: 70%;
+    float: left;
+}
+#form-box-dx div p{
+    float: left;
+    width: 30%;
+    margin: 1.6em 0;
+    text-align: end;
+    padding-right: .5em;
+}
+#form-box-dx div p a{
+    border-bottom: 1px solid black;
+}
+#form-box-dx div:nth-child(3) h3{
+    margin: 1em 0;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+#price-section{
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #75757563;
+}
+
+#price-section div{
+    width: 100%;
+    overflow: auto;
+}
+#price-section div p:first-child{
+    width: 70%;
+    text-align: left;
+    margin: 0;
+    padding: .3em 0;
+}
+#price-section div p:last-child{
+    width: 30%;
+    margin: 0;
+    padding: .3em 0;
+}
+
+/* Gestisco lo stile del shoes-box */
+#shoes-box div{
+    overflow: auto;
+}
+#shoes-box div figure{
+    overflow: auto;
+    margin: 1em 0;
+}
+#shoes-box div figure div{
+    width: 60px;
+    float: left;
+}
+#shoes-box div figure figcaption{
+    float: left;
+    width: calc(100% - 60px);
+    padding-left: 1.3em;
+}
+#shoes-box div figure figcaption div{
+    width: 100%;
+    margin:0;
+    color: #757575;
+    overflow: auto;
+}
+#shoes-box div figure figcaption div:first-child{
+    margin-top: 0;
+    margin-bottom: .5em;
+    color: black;
+}
+
+/* Gestisco il form di pagamento */
+#form-box-sx-payment{
+    position: absolute;
+    overflow: auto;
+    float: left;
+    top: 690px;
+    left: 0;
+    transition: 1s ease-in-out;
+}
+#form-box-sx-payment{
+    margin-right: 1em;
+    width:calc(70% - 1em);
+    float: left; 
+    overflow: auto;
+ }
+ #form-box-sx-payment div:nth-child(2) p{
+    margin: .5em 0;
+ }
+ #form-box-sx-payment div:nth-child(2) p:last-child{
+    color: #757575 ;
+ }
+ #form-box-sx-payment div:nth-child(2) p:last-child a{
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: .2em;
+    text-decoration-thickness: .1em;
+ }
+#form-box-sx-payment h2{
+    margin-bottom: 1.75rem;
+}
+
+ /* Stile dei due input per voucher */
+ #voucher-gift-box{
+    overflow: auto;
+ }
+ #voucher-gift-box input{
+    margin: 1em .5em 1em 0;
+}
+#voucher-gift-box div{
+    padding-left: .8em;
+    width: 6%;
+    height: 2.4em;
+    border-radius: 50%;
+    float: left;
+}
+#voucher-gift-box div:last-child{
+    width: 94%;
+    height: 2.6em;
+    padding: .7em .3em;
+    border: none;
+}
+ #voucher-gift-box div:first-child:hover{
+    background-color: #75757570;
+    transition: 1s ease;
+    cursor: pointer;
+}
+#form-box-sx-payment div:nth-child(4){
+    margin-top: 1em;
+    clear: both;
+}
+#form-box-sx-payment div:nth-child(4) input{
+    width: 80%;
+    padding: 1em 0;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 1em;
+    padding-left: .5em;
+}
+#form-box-sx-payment div:nth-child(4) button{
+    margin: 0 1em;
+    padding: .7em;
+    font-size: 1em;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #75757569;
+    color: rgb(158, 158, 160);
+    font-weight: 600;
+}
+#form-box-sx-payment div:nth-child(4) button:hover{
+    border: 1px solid black;
+}
+#form-box-sx-payment div:nth-child(5) input{
+    width: 80%;
+    margin-top: .5em;
+    padding: 1em 0;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 1em;
+    padding-left: .5em;
+}
+#form-box-sx-payment div:nth-child(5) button{
+    margin: 0 1em;
+    padding: .7em;
+    font-size: 1em;
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #75757569;
+    color: rgb(158, 158, 160);
+    font-weight: 600;
+}
+#form-box-sx-payment div:nth-child(5) button:hover{
+    border: 1px solid black;
+}
+#form-box-sx-payment div:nth-child(6){
+    margin: 1.5em 0;
+}
+
+/* Radio button Paypal-Gpay-cc */
+#payment-method-select div{
+    width: 100%;
+}
+#payment-method-select div input{
+    margin: 0;
+    border: 1px solid black;
+    margin-bottom: 1em;
+}
+#payment-method-select div img{
+    margin: .5em;   
+    max-width: 10%;
+    margin-bottom: 0;
+}
+
+/* Box aggiunta Carta Credito */
+#form-box-sx-payment div:nth-child(8){
+    margin-top: 1.5em;
+    border: 1px solid #CCCCCC;
+    padding: 1.5em;
+    border-radius: 8px;
+    width: calc(100% - .5em);
+}
+#form-box-sx-payment div:nth-child(8) p{
+    margin-top: 0;
+}
+#add-card-box{
+    overflow: auto;
+}
+#add-card-box div{
+    float: left;
+    margin: 0 .5em;
+    width: calc(25% - 1em);
+}
+#add-card-box div:first-child{
+    width: 50%;
+    margin-left: 0;
+}
+#add-card-box div:last-child{
+    margin-right: 0;
+}
+#add-card-box div input{
+    width: 100%;
+    margin-top: .5em;
+    padding: 1em 0;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 1em;
+    padding-left: .5em;
+}
+/* Where is my CVV? */
+#cvv-search-box{
+    margin-top: 1.5em;
+    text-align: end;
+}
+#cvv-search-box span a{
+    border-bottom: 2px solid black;
+    padding-bottom: .3em;
+    font-size: .8em;
+}
+
+/* Stile del bottone passa alla verifica dell'ordine */
+
+#form-box-sx-payment div:nth-child(9){
+    text-align: end;
+    margin-top: 1.5em;
+    border-bottom: 1px solid #75757569;
+}
+
+#form-box-sx-payment div:nth-child(9) button{
+    margin: 1em 0;
+    padding: .7em;
+    font-size: 1em;
+    border-radius: 30px;
+    background-color: rgb(229, 229, 229);
+    color: rgb(158, 158, 160);
+    font-weight: 600;
+    border-color: transparent;
+    cursor: pointer;
+}
+#form-box-sx-payment div:nth-child(10){
+    border-bottom: 1px solid #75757569;
+    color: #757575;
+    margin-bottom: 2em;
+    padding: 1.75em 0;
+}
+/* Gestisco lo stile della pagina ordinato con successo */
+#form-box-sx-verified{
+    margin-right: 1em;
+    width: 100%;
+    position: absolute;
+    overflow: auto;
+    float: left;
+    top: 690px;
+    left: 0;
+    transition: 1s ease-in-out;
+}
+#form-box-sx-verified div:nth-child(2){
+    font-size: 2em;
+    text-align: center;
+    margin: 2em 0;
+}
+.img-box-verified{
+    max-width: 50%;
+    overflow: auto;
+    padding: 0 1em;
+    float: left;
+    margin-bottom: 2em;
+}
+#form-box-sx-verified div:nth-child(5){
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+#form-box-sx-verified div:nth-child(5) img{
+    width: 20%;
+}
+
+#order-close{
+    transition: 1s ease-in-out;
+}
+#order-close:hover{
+    transform: rotate(360deg);
+}
+.overflow-hd{
+    overflow: hidden;
+}

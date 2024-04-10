@@ -1,0 +1,452 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    max-width: 1280px;
+    padding: 0;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.text-white{
+    color: white;
+}
+.hidden{
+    height: 0px;
+}
+button:hover{
+    background-color: #555;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.color-white{
+    color: #fff;
+}
+.bold{
+    font-weight: 300;
+}
+.filter-brightness{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.bck-color-grey{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.visible{
+    max-height: 200px;
+}
+h2{
+    font-weight: 500;
+}
+h3{
+    margin: .5em 0;
+}
+.shoes-price{
+    display: inline;
+    padding-right: .5em;
+}
+.transition{
+    transition: .5s;
+}
+/* Gestisco la barra sopra alla barra dei menù */
+#tit-bar{
+    padding: 0 2em;
+    margin-top: .3em;
+    max-width: 100%;
+    overflow: auto;
+    background-color: #F5F5F5
+}
+#tit-bar-box-sx{
+    overflow: auto;
+    width: calc(100%-70%);
+    float: left;
+}
+#tit-bar-box-sx ul li{
+    float: left;
+    padding: 0 1em;
+}
+#tit-bar-box-dx{
+    width: 50%;
+    float: right;    
+}
+
+#tit-bar-box-dx ul{
+    margin-top: .3em;
+    overflow: auto;
+    width: 100%;
+    text-align: end;
+}
+#tit-bar-box-dx ul li{
+    text-align: center;
+    display:inline-block;
+}
+    
+#tit-bar-box-dx ul li a{
+    display: block;
+    margin: .2em 0;
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid black;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    font-size: .8em;
+}
+#tit-bar-box-dx ul li:last-child a{
+    border-right: none;
+}
+#tit-bar-box-dx ul li:hover a{
+    color: #555;
+}
+
+/* Gestisco la navbar principale */
+#nav-bar{
+    padding: 0 2em;
+    padding-top: .6em;
+    clear: both;
+    width: 100%;
+    height: 60px;
+}
+#logo-air-box{
+    float: left;
+    width: 25%;
+    padding: 0 1em;
+}
+
+#image-logo-nike{
+    display: block;
+    width: 3.68em;
+    height: 3.68em;
+}
+#bar-menu{
+    overflow: hidden;
+    width: 50%;
+    height: 60px;
+    float: left;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#bar-menu ul{
+    width: 100%;
+}
+#bar-menu ul li{
+    height: 60px;
+    float: left;
+}
+#bar-menu ul li a{
+    text-align: center;
+    margin: 0.6em 1em;
+    display: block;
+    padding: 0.6em 0;
+    font-size: .8em;
+    text-decoration: none;
+    color: black;
+}
+#bar-menu ul li:hover a{
+    border-bottom: 1px solid black;
+}
+#box-destro-nav{
+    margin: .6em 0;
+    width: 25%;
+    float: right;
+}
+
+#box-destro-btn-box{
+    width: 65%;
+    float: left;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+}
+#box-destro-btn-box button{
+    padding-top: .5em;
+    border: none;
+    float: left;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#box-destro-btn-box input{
+    float: left;
+    width: 70%;
+    height: 2.7em;
+    border: none;
+    text-indent: 0;
+    background-color: #F5F5F5;
+}
+#box-destro-icon-box{
+    padding-top: .1em;
+    float: left;
+    width: calc(35% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#carrello-icon{
+    cursor: pointer;
+}
+#carrello{
+    float: right;
+    padding-left: .3em;
+    padding-top: .3em;
+    width: 50%;
+    border-radius: 50%;
+}
+#carrello:hover{
+    background-color: #F5F5F5;
+}
+#favorite-icon{
+    float: left;
+    cursor: pointer;
+    width: 50%;
+    padding-left: .3em;
+    padding-top: .3em;
+    border-radius: 50%;
+}
+#favorite-icon:hover{
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #F5F5F5;
+}
+main{
+    max-width: 1100px;
+    margin: 3em auto;
+}
+
+/* Gestisco lo stile del box di sinistra */
+#box-sx{
+    width: calc(60% -1em);
+    margin-right: 1em;
+    overflow:auto;
+    float: left;
+}
+#box-sx-item{
+    width: 100%;
+    overflow: auto;
+}
+#box-sx-item div:first-child{
+    width: 25%;
+    float: left;
+}
+#box-sx-item div:nth-child(2) div:first-child{
+    margin-left: 2em;
+    width: 50%;
+    float: left;
+}
+#box-sx-item div:nth-child(2) div:last-child{
+    float: left;
+    width: 15%;
+    text-align: end;
+    padding-right: .5em;
+}
+#box-sx-item div:nth-child(3){
+    text-align: end;
+}
+#box-sx-item div:nth-child(3){
+    float: left;
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 50%;
+}
+#box-sx-item div:nth-child(3) ul li{
+    float: left;
+    padding: 0 .5em;
+}
+#box-sx-item div:nth-child(3) ul li:hover{
+    cursor: pointer;
+}
+#box-sx>div:first-child{
+    border: 1px solid rgba(0, 0, 0, 0.277);
+    padding: 0 .5em;
+}
+#box-sx div:first-child h2{
+    color: orangered;
+}
+#box-sx>div:first-child p{
+    color: #888;
+}
+#box-sx-item div:nth-child(2) div:first-child p,span{
+    color: #888;
+}
+#box-sx-item div:nth-child(2) div:first-child span select{
+    border: none;
+}
+#box-sx>div p a{
+    border-bottom: 1px solid black;
+}
+#box-sx div a{
+    border-bottom: 1px solid black;
+}
+#box-sx-find{
+    padding-top: 1em;
+    clear: both;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.277);
+}
+#box-sx-favorite{
+    margin-top: 6em;
+}
+#box-sx-favorite h2,p{
+    margin: .5em 0;
+}
+
+/* Stile del secondo oggetto */
+#box-sx-2-item{
+    width: 100%;
+    padding-top: 1em;
+    overflow: auto;
+}
+#box-sx-2-item div:first-child{
+    width: 25%;
+    float: left;
+}
+#box-sx-2-item div:nth-child(2) div:first-child{
+    margin-left: 2em;
+    width: 50%;
+    float: left;
+}
+#box-sx-2-item div:nth-child(2) div:last-child{
+    float: left;
+    width: 15%;
+    text-align: end;
+    padding-right: .5em;
+}
+#box-sx-2-item div:nth-child(3){
+    text-align: end;
+}
+#box-sx-2-item div:nth-child(3){
+    float: left;
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 50%;
+}
+#box-sx-2-item div:nth-child(3) ul li{
+    float: left;
+    padding: 0 .5em;
+}
+#box-sx-2-item div:nth-child(3) ul li:hover{
+    cursor: pointer;
+}
+#box-sx-2-item div:nth-child(2) div:first-child p,span{
+    color: #888;
+}
+#box-sx-2-item div:nth-child(2) div:first-child span select{
+    border: none;
+}
+#box-sx-2-find{
+    padding-top: 1em;
+    clear: both;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.277);
+}
+.shoes-price span{
+    color: black;
+}
+
+/* Gestisco il box di destra*/
+#box-dx{
+    padding: 0 .5em;
+    width: 40%;
+    float: left;
+}
+#box-dx div{
+    overflow: auto;
+}
+#box-dx div:nth-child(2) p{
+    float: left;
+    width: 50%;
+}
+#box-dx div:nth-child(2) p:last-child{
+    text-align: end;
+}
+#box-dx div:nth-child(2) p:last-child svg:hover{
+    cursor: pointer;
+}
+
+#box-dx div:nth-child(3){
+    transition: .5s;
+}
+#box-dx div:nth-child(3) button{
+    border-radius: 20px;
+    height: 2.7em;
+    border-style: solid;
+    padding: 0 1em;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #88888884;
+    width: 20%;
+}
+#box-dx div:nth-child(3) input{
+    border-radius: 8px;
+    width: 50%;
+    height: 2.7em;
+    border: 1px solid #88888884;
+}
+#box-dx div:nth-child(4){
+    padding: .5em 0;
+}
+#box-dx div:nth-child(4) p{
+    float: left;
+    width: 50%;
+}
+#box-dx div:nth-child(4) p:last-child{
+    text-align: end;
+}
+#box-dx div:nth-child(5){
+    padding: .5em 0;
+}
+#box-dx div:nth-child(5) p{
+    float: left;
+    width: 50%;
+}
+#box-dx div:nth-child(5) p:last-child{
+    text-align: end;
+}
+#box-dx div:nth-child(6){
+    margin: 1em 0;
+    padding: 1em 0;
+    border-top: 1px solid #88888884;
+    border-bottom: 1px solid #88888884;
+}
+#box-dx div:nth-child(6) p{
+    float: left;
+    width: 50%;
+}
+#box-dx div:nth-child(6) p:last-child{
+    text-align: end;
+}
+#payment button{
+    width: 100%;
+    height: 3.75em;
+    margin: .5em 0;
+    padding: 1em 0;
+    font-size: 1em;
+    border-radius: 30px;
+    box-shadow: none;
+}
+#payment button:first-child{
+    background-color: black;
+    color: #F5F5F5;
+    border: none;
+}
+#payment button:first-child:hover{
+    background-color: rgba(0, 0, 0, 0.577);
+    cursor: pointer;
+}
+#payment button:last-child{
+    background-color: #F5F5F5;
+    color: black;
+    border: 1px solid #88888884;
+}
+#payment button:last-child:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #88888884;
+    cursor: pointer;
+}

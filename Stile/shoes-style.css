@@ -1,0 +1,580 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    max-width: 1280px;
+    padding: 0;
+    margin: auto;
+}
+img{
+    max-width: 100%;
+}
+div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.text-white{
+    color: white;
+}
+.hidden{
+    display: none;
+}
+button:hover{
+    background-color: #555;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.color-white{
+    color: #fff;
+}
+.bold{
+    font-weight: 400;
+}
+.filter-brightness{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+.bck-color-grey{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.visible{
+    display: block;
+}
+.brd-col-red{
+    border: 1px solid red;
+}
+.color-red{
+    color: red;
+}
+/* Gestisco la barra sopra alla barra dei menù */
+#tit-bar{
+    padding: 0 2em;
+    margin-top: .3em;
+    max-width: 100%;
+    overflow: auto;
+    background-color: #F5F5F5
+}
+#tit-bar-box-sx{
+    overflow: auto;
+    width: calc(100%-70%);
+    float: left;
+}
+#tit-bar-box-sx ul li{
+    float: left;
+    padding: 0 1em;
+}
+
+#tit-bar-box-dx{
+    width: 50%;
+    float: right;    
+}
+
+#tit-bar-box-dx ul{
+    margin-top: .3em;
+    overflow: auto;
+    width: 100%;
+    text-align: end;
+}
+#tit-bar-box-dx ul li{
+    text-align: center;
+    display:inline-block;
+}
+    
+#tit-bar-box-dx ul li a{
+    display: block;
+    margin: .2em 0;
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid black;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    font-size: .8em;
+}
+#tit-bar-box-dx ul li:last-child a{
+    border-right: none;
+}
+#tit-bar-box-dx ul li:hover a{
+    color: #555;
+}
+
+/* Gestisco la navbar principale */
+
+#nav-bar{
+    padding: 0 2em;
+    padding-top: .6em;
+    clear: both;
+    width: 100%;
+    height: 60px;
+}
+#logo-air-box{
+    float: left;
+    width: 25%;
+    padding: 0 1em;
+}
+
+#image-logo-nike{
+    display: block;
+    width: 3.68em;
+    height: 3.68em;
+}
+#bar-menu{
+    overflow: hidden;
+    width: 50%;
+    height: 60px;
+    float: left;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+#bar-menu ul{
+    width: 100%;
+}
+#bar-menu ul li{
+    height: 60px;
+    float: left;
+}
+#bar-menu ul li a{
+    text-align: center;
+    margin: 0.6em 1em;
+    display: block;
+    padding: 0.6em 0;
+    font-size: .8em;
+    text-decoration: none;
+    color: black;
+}
+#bar-menu ul li:hover a{
+    border-bottom: 1px solid black;
+}
+
+#box-destro-nav{
+    margin: .6em 0;
+    width: 25%;
+    float: right;
+}
+
+#box-destro-btn-box{
+    width: 65%;
+    float: left;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+}
+#box-destro-btn-box button{
+    padding-top: .5em;
+    border: none;
+    float: left;
+    border-radius: 100%;
+    cursor: pointer;
+}
+#box-destro-btn-box input{
+    float: left;
+    width: 70%;
+    height: 2.7em;
+    border: none;
+    text-indent: 0;
+    background-color: #F5F5F5;
+}
+#box-destro-icon-box{
+    padding-top: .1em;
+    float: left;
+    width: calc(35% - 2em);
+    margin-left: 1em;
+    margin-right: 1em;
+}
+#carrello-icon{
+    cursor: pointer;
+}
+#carrello{
+    float: right;
+    padding-left: .3em;
+    padding-top: .3em;
+    width: 50%;
+    border-radius: 50%;
+}
+#carrello:hover{
+    background-color: #F5F5F5;
+}
+#favorite-icon{
+    float: left;
+    cursor: pointer;
+    width: 50%;
+    padding-left: .3em;
+    padding-top: .3em;
+    border-radius: 50%;
+}
+#favorite-icon:hover{
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #F5F5F5;
+}
+/* Gestisco il banner sotto la navbar */
+#banner{
+    width: 100%;
+    height: 60px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+#banner div{
+    padding-top: .7em;
+    margin-top: .7em;
+    width: 100%;
+}
+
+#banner span{
+    width: 100%;
+    font-weight: 500;
+    padding-top: .5em;
+}
+.bold-small{
+    font-size: .7em;
+}
+
+#main-box{
+    transition: 1s;
+}
+
+/* Gestisco lo stile del box scarpa */
+#shoes-box{
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 2em;
+    overflow: auto;
+    height: 850px;
+    position: relative;
+}
+#shoes-box-sx{
+    width: 60%;
+    float: left;
+    height: 800px
+}
+#shoes-box-sx-2{
+    width: 60%;
+    float: left;
+    height: 800px
+}
+#shoes-box-dx{
+    width: calc(40% - 1em);
+    float: left;
+    margin: 3em .5em 0 .5em;
+    padding: 0 3em 0 1.5em;
+}
+#shoes-box-dx div h2{
+    margin-bottom: 0;
+    font-weight: 500;
+}
+#shoes-box-dx div p{
+    margin-top: .5em;
+}
+#shoes-box-dx div p:last-child{
+    margin-top: 1.5em;
+}
+#shoes-box-sx>div{
+    margin: 3em .5em 0 .5em;
+    width: calc(100% - 1em);
+}
+#shoes-box-sx-2>div{
+    margin: 3em .5em 0 .5em;
+    width: calc(100% - 1em);
+}
+#shoes-img-small{
+    width: calc(10% - .5em);
+    float: left;
+    margin-right: .5em;
+}
+#shoes-img-small>div{
+    height: 60px;
+    width: 60px;
+    margin: .5em 0;
+}
+#shoes-img-small img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#shoes-img-small video{
+    width: 100%;
+    border-radius: 10px;
+}
+#shoes-img-small video:hover{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+#shoes-img-small img:hover{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+
+}
+/* Stile del secondo imgmini box */
+#shoes-img-small-2{
+    width: calc(10% - .5em);
+    float: left;
+    margin-right: .5em;
+}
+#shoes-img-small-2>div{
+    height: 60px;
+    width: 60px;
+    margin: .5em 0;
+}
+#shoes-img-small-2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+#shoes-img-small-2 video{
+    width: 100%;
+    border-radius: 10px;
+}
+video{
+    max-width: 100%;
+}
+#shoes-img-small-2 video:hover{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+#shoes-img-small-2 img:hover{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+/* Stile dell'immagine scarpa grande */
+#shoes-img-big-box>div{
+    max-width: 535px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 650px;
+}
+#shoes-img-big-box{
+    margin: .5em 0 .5em .5em;
+    width: calc(90% - .5em);
+    float: left;
+    border-radius: 4px;
+    position: relative;
+}
+#shoes-img-big-box div div{
+    width: 20%;
+    position: absolute;
+    bottom: 10px;
+    right: 80px;
+}
+.button-img-big{   
+    height: 1.9em;
+    font-size: 1.5rem;
+    width: 1.9em;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+/* Gestisco lo stile dell'immagine scarpa2 grande  */
+#shoes-img-big-box-2>div{
+    max-width: 535px;
+    background-repeat: no-repeat;
+    background-size: contain;     
+    height: 650px;
+}
+#shoes-img-big-box-2{
+    margin: .5em 0 .5em .5em;
+    width: calc(90% - .5em);
+    float: left;
+    border-radius: 4px;
+    position: relative;
+}
+#shoes-img-big-box-2 div div{
+    width: 20%;
+    position: absolute;
+    bottom: 10px;
+    right: 80px;
+}
+
+#shoes-img-big-box-2 div div button{
+    height: 1.9em;
+    font-size: 1.5rem;
+    width: 1.9em;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Gestisco lo stile del box destro */
+#mini-img-select{
+    margin-top: 2em;
+}
+#mini-img-select div{
+    max-width: 70px;
+    float: left;
+    margin: 0 .5em;
+}
+#mini-img-select div img{
+    border-radius: 10px;
+    cursor: pointer;
+}
+#mini-img-select div img:hover{
+    border: 1px solid black;
+}
+
+#size-select{
+    clear: both;
+}
+#size-select div:first-child{
+    padding-right: 2em;
+    padding-left: .3em;
+}
+#size-select div{
+    width: 50%;
+    float: left;
+    padding: 0 1em;
+}
+#size-select div p{
+    line-height: 1.5em;
+    font-weight: 600;
+}
+#size-select div:last-child p{
+    color: #888;
+    cursor: pointer;
+}
+/* Gestisco la selezione delle taglie */
+#size{
+    width: 100%;
+}
+#size span{
+    padding-left: .5em;
+}
+#size ul{
+    width: 100%;
+    margin-bottom: 1em;
+    overflow: auto;
+}
+#size ul li{
+    width: calc(100% / 3 - .6em);
+    float: left;
+    text-align: center;
+    box-shadow: #9a9a9a9b 0px 0px 0px 1px inset;
+    border-radius: 4px;
+    height: 3em;
+    padding-top: .9em;
+    margin: .3em;
+}
+#size ul li:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+/* Gestisco la parte dell'aggiunta al carrello e preferiti */
+
+#add-box button{
+    width: 100%;
+    height: 3.75em;
+    margin: .5em 0;
+    padding: 1em 0;
+    font-size: 1em;
+    border: 1px solid #9a9a9a9b;
+    border-radius: 30px;
+    box-shadow: none;
+    background-color: white;   
+}
+#add-box button:first-child{
+    background-color: black;
+    color: #F5F5F5;
+    border: none;
+}
+#add-box button:first-child:hover{
+    background-color: rgba(0, 0, 0, 0.577);
+    cursor: pointer;
+}
+#add-box button:last-child:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* Gestisco il pop-up aggiunta al carrello */
+#pop-up-carrello{
+    width: 15%;
+    clear: both;
+    position: absolute;
+    right: 27%;
+    background-color: #F5F5F5;
+    top: 103px;
+}
+#add-cart{
+    float: left;
+    margin: .6em;
+    font-weight: 600;
+    font-size: .8em;
+}
+#close-cart{
+    float: right;
+    margin: .6em;
+    font-size: .8em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#cart-img{
+    clear: both;
+    margin: .5em;
+    width: 25%;
+    float: left;
+}
+#cart-list{
+    width: 55%;
+    float: left;
+    margin: .5em;
+}
+#cart-list ul li{
+    margin: .5em;
+    font-size: .8em;
+}
+#cart-list ul li:nth-child(2){
+    color: #666;
+}
+#cart-list ul li:nth-child(3){
+    color: #666;
+}
+#cart-button{
+    clear: both;
+    margin: .5em;
+}
+#cart-button button:first-child{
+    width: 60%;
+    height: 3em;
+    border-radius:20px;
+    background-color: #F5F5F5;
+    border: none;
+    border: 1px solid #9a9a9a9b;
+}
+#cart-button button:last-child{
+    width: 30%;
+    height: 3em;
+    border-radius:20px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-left: .5em;
+}
+
+#cart-button button:first-child:hover{
+    background-color: #F5F5F5;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#cart-button button:last-child:hover{
+    background-color: rgba(0, 0, 0, 0.577);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1600px) {
+    #pop-up-carrello{
+        width: 25%;
+        right: 20%;
+    }
+}
+@media screen and (max-width: 1950px) {
+    #pop-up-carrello{
+        width: 25%;
+        right: 20%;
+    }
+}

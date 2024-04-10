@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento. Nike.com</title>
+    <link rel="shortcut icon" href="./Home-page/favicon.ico" />
+    <link rel="stylesheet" href="/Stile/payment-style.css">
+    <script src="/Script/script-payment.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="nav-bar">
+            <div id="logo-air-box">
+                <div>
+                    <svg aria-hidden="true"focusable="false" viewBox="0 0 24 24" role="img"
+                        id="image-logo-nike" fill="none">
+                        <path fill="currentColor" fill-rule="evenodd"
+                            d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+            </div>
+            <div>
+                <div id="carrello">
+                    <svg id="carrello-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img"
+                        width="24px" height="24px" fill="none">
+                        <path stroke="currentColor" stroke-width="1.5"
+                            d="M8.25 8.25V6a2.25 2.25 0 012.25-2.25h3a2.25 2.25 0 110 4.5H3.75v8.25a3.75 3.75 0 003.75 3.75h9a3.75 3.75 0 003.75-3.75V8.25H17.5">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h2>Pagamento</h2>
+        </div>
+        <div id="form">
+            <div id="form-box-sx">
+                <div>
+                    <h2>Opzioni di consegna</h2>
+                </div>
+                <div id="first-section">
+                    <button id="shipment-btn"><svg aria-hidden="true" class="css-11oobwz" focusable="false"
+                            viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none" style="right: 0px;">
+                            <path stroke="currentColor" stroke-width="1.5"
+                                d="M8.25 16.5a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm12 .033a2.25 2.25 0 11-4.502-.001 2.25 2.25 0 014.502.001z"
+                                clip-rule="evenodd"></path>
+                            <path stroke="currentColor" stroke-width="1.5"
+                                d="M15.75 16.565H8.5M.75 11.5V14A2.25 2.25 0 003 16.25h.25m16.25-6.5H3A2.25 2.25 0 01.75 7.5V5.25h17.189c.2 0 .39.079.531.22l4.56 4.56a.75.75 0 01.22.531v3.689A2.25 2.25 0 0121 16.5h-.75">
+                            </path>
+                        </svg><span>Spedizione</span></button>
+                    <button id="withdraw-btn"><svg aria-hidden="true" class="css-11oobwz" focusable="false"
+                            viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none" style="right: -6px;">
+                            <path fill="currentColor"
+                                d="M12 21.747l-.468.586a.75.75 0 00.936 0L12 21.747zM18 9c0 .92-.303 2.081-.824 3.362-.515 1.269-1.222 2.6-1.974 3.843a38.411 38.411 0 01-2.217 3.274c-.695.914-1.223 1.498-1.453 1.682l.936 1.172c.395-.314 1.023-1.042 1.711-1.947a39.904 39.904 0 002.306-3.404c.78-1.288 1.526-2.691 2.08-4.055.55-1.352.935-2.723.935-3.927H18zm-5.532 12.16c-.23-.183-.758-.767-1.453-1.681a38.41 38.41 0 01-2.217-3.274c-.752-1.243-1.458-2.574-1.974-3.843C6.303 11.081 6 9.921 6 9H4.5c0 1.204.385 2.575.934 3.927.555 1.364 1.302 2.767 2.08 4.055.78 1.288 1.6 2.474 2.307 3.404.688.905 1.316 1.633 1.711 1.947l.936-1.172zM6 9a6 6 0 016-6V1.5A7.5 7.5 0 004.5 9H6zm6-6a6 6 0 016 6h1.5A7.5 7.5 0 0012 1.5V3z">
+                            </path>
+                            <path stroke="currentColor" stroke-width="1.5"
+                                d="M15.25 9a3.25 3.25 0 11-6.5 0 3.25 3.25 0 016.5 0z" clip-rule="evenodd"></path>
+                        </svg><span>Ritiro</span></button>
+                </div>
+                <div>
+                    <div id="name-box">
+                        <input id="name" type="text" placeholder="Nome*">
+                        <span class="hidden required">Inserirsci il tuo Nome*</span>
+                    </div>
+                    <div id="cognome-box">
+                        <input id="cognome" type="text" placeholder="Cognome*">
+                        <span class="hidden required">Inserisci il tuo Cognome*</span>
+                    </div>
+                </div>
+                <div>
+                    <input id="address" type="text" placeholder="Indirizzo e numero civico*">
+                    <span class="hidden required">Inserisci un indirizzo valido*</span>
+                </div>
+                <div id="address-box">
+                    <div id="company" class="hidden">
+                        <input id="company-name" type="text" placeholder="Nome Azienda, Interno, Unità*">
+                        <span class="hidden">Inserisci il nome dell'Azienda</span>
+                    </div>
+                    <button id="add-button">
+                        <p>+ Aggiungi Azienda, C/O, App., Interno, Unità</p>
+                    </button>
+                </div>
+                <div>
+                    <div>
+                        <input id="cap" type="number" placeholder="CAP*">
+                        <span class="hidden required">Inserisci il tuo CAP*</span>
+                    </div>
+                    <div>
+                        <input id="città" type="text" placeholder="Città*">
+                        <span class="hidden required">Inserisci una città valida*</span>
+                    </div>
+                    <div>
+                        <input id="paese" type="text" placeholder="Paese/Regione">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <input id="email" type="email" placeholder="E-mail*">
+                        <span class="hidden required">Inserisci un'indirizzo e-mail valido*</span>
+                    </div>
+                    <div>
+                        <input id="telefono" type="tel" maxlength="10" placeholder="Numero di telefono*">
+                        <span class="hidden required">Inserisci un numero di Telefono valido*</span>
+                    </div>
+                </div>
+                <div>
+                    <button id="save-btn">Salva e continua</button>
+                </div>
+                <div>
+                    <h2>Pagamento</h2>
+                </div>
+                <div>
+                    <h2>Verifica dell'ordine</h2>
+                </div>
+            </div>
+            <div id="form-box-sx-payment" class="hidden">
+                <div>
+                    <h2>Pagamento</h2>
+                </div>
+                <div>
+                    <p>Paese/regione di fatturazione</p>
+                    <p>Italia
+                        <a href="#">Modifica</a>
+                    </p>
+                </div>
+                <div id="voucher-gift-box">
+                    <div>
+                        <input type="checkbox" id="gift-card">
+                    </div>
+                    <div>
+                        <label for="gift-card">Possiedi una gift card, un voucher prodotto o un codice
+                            promozionale?</label>
+                    </div>
+                </div>
+                <div id="gift-card-box" class="hidden">
+                    <input type="text" placeholder="Numero voucher">
+                    <button>Applica</button>
+                    <span class="hidden">Inserisci un numero di gift card valido.</span>
+                </div>
+                <div id="promotional-code" class="hidden">
+                    <input type="text" placeholder="Codice promozionale">
+                    <button>Applica</button>
+                    <span class="hidden">Questo campo è obbligatorio</span>
+                </div>
+                <div>
+                    <p>Seleziona metodo di pagamento</p>
+                </div>
+                <div id="payment-method-select">
+                    <div>
+                        <input type="radio" name="payment">
+                        <img src="data:image/png;base64,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"
+                            alt="PayPal">
+                    </div>
+                    <div>
+                        <input type="radio" name="payment"><img src="/img/gpay.png" alt="">
+                    </div>
+                    <div>
+                        <input type="radio" checked name="payment"><svg aria-hidden="true" focusable="false"
+                            viewBox="0 0 24 24" role="img" width="24px" height="24px" fill="none"
+                            style="color: black; position: relative; top: 6px;">
+                            <path stroke="currentColor" stroke-width="1.5"
+                                d="M18 18.75H6a2.25 2.25 0 01-2.25-2.25v-9A2.25 2.25 0 016 5.25h12a2.25 2.25 0 012.25 2.25v9A2.25 2.25 0 0118 18.75z"
+                                clip-rule="evenodd"></path>
+                            <path stroke="currentColor" stroke-width="1.5" d="M3.75 9.75h16.5"></path>
+                        </svg>Carta di Credito/Debito
+                    </div>
+                </div>
+                <div>
+                    <p>Aggiungi carta</p>
+                    <div id="add-card-box">
+                        <div>
+                            <input type="text" id="credit-card-number" placeholder="Numero carta">
+                            <span class="hidden" id="number-card-invalid-msg">Inserisci il numero di carta
+                                valido*</span>
+                        </div>
+                        <div>
+                            <input type="date" id="credit-card-date" placeholder="MM/AA">
+                            <span class="hidden" id="date-invalid-msg">Data non valida.*</span>
+                        </div>
+                        <div>
+                            <input type="num" maxlength="3" minlength="3" id="credit-card-cvv" placeholder="CVV">
+                            <span class="hidden" id="card-cvv-invalid">CVV non valido.*</span>
+                        </div>
+                    </div>
+                    <div id="cvv-search-box">
+                        <span><a href="#">Where is my CVV?</a></span>
+                    </div>
+                </div>
+                <div>
+                    <button id="payment-button">Passa alla verifica dell'ordine</button>
+                </div>
+                <div>
+                    <h2>Verifica dell'ordine</h2>
+                </div>
+
+            </div>
+            <div id="form-box-sx-verified" class="hidden">
+                <div>
+                    <h2>Verifica dell'ordine</h2>
+                </div>
+                <div>
+                    <h3>Complimenti, ordine concluso con successo!!</h3>
+                </div>
+                <div class="img-box-verified">
+                    <img src="Home-page/scarpa_7.jpg" alt="">
+                </div>
+                <div class="img-box-verified">
+                    <img src="Home-page/scarpa_8.jpg" alt="">
+                </div>
+                <div class="overflow-hd">
+                    <img id="order-close" src="/img/check.png" alt="spunta verde">
+                </div>
+            </div>
+            <div id="form-box-dx">
+                <div>
+                    <h2>Nel Carrello</h2>
+                    <p><a href="#">Modifica</a></p>
+                </div>
+                <div id="price-section">
+                    <div>
+                        <p>Subtotale</p>
+                        <p>249,98 €</p>
+                    </div>
+                    <div>
+                        <p>Costi di spedizione stimati</p>
+                        <p>0,00 €</p>
+                    </div>
+                    <div>
+                        <p>Totale</p>
+                        <p>249,98 €</p>
+                    </div>
+                </div>
+                <div>
+                    <h3>Arriva entro il giorno ven 12 gen</h3>
+                </div>
+                <div id="shoes-box">
+                    <div>
+                        <figure>
+                            <div>
+                                <img src="Home-page/scarpa_7.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                <div>Scarpa Nike Dunk Low Retro - Uomo</div>
+                                <div>Modello nr.: DD1391-103</div>
+                                <div>Misura: 43 </div>
+                                <div>Colore: Nero/Bianco </div>
+                                <div>Quantità: 1 @ 119,99 €</div>
+                                <div>119,99 €</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div>
+                        <figure>
+                            <div>
+                                <img src="Home-page/scarpa_8.jpg" alt="">
+                            </div>
+                            <figcaption>
+                                <div>Scarpa Nike Dunk Low Retro - Donna</div>
+                                <div>Modello nr.: DD1391-104</div>
+                                <div>Misura: 38.5 </div>
+                                <div>Colore: Chromo/Bianco </div>
+                                <div>Quantità: 1 @ 119,99 €</div>
+                                <div>119,99 €</div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
